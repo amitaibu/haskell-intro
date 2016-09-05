@@ -16,11 +16,14 @@ appendList'' = [1] `mappend` [2]
 
 -- How to append numbers?
 
-appendInt :: Int
-appendInt = mappend 5 6
+-- appendInt :: Int
+-- appendInt = mappend 5 6
 
 appendIntSum :: Sum Int
 appendIntSum = (Sum 5) `mappend` (Sum 6)
 
 appendIntSum' :: Sum Int
 appendIntSum' = 5 `mappend` 6
+
+appendIntProduct :: Product Int
+appendIntProduct = (Product 5) `mappend` (Product 6)
